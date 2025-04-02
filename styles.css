@@ -1,0 +1,108 @@
+body {
+    font-family: "Nunito Sans", sans-serif !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #303030 !important;
+}
+
+.swiper-button-next:hover img,
+.swiper-button-prev:hover img {
+    content: url("/assets/arrow2.svg") !important;
+}
+
+.menuBlue:hover {
+    content: url("/assets/menuBlue.svg") !important;
+}
+
+@keyframes wiggle {
+    0%,
+    100% {
+        transform: rotate(-1.5deg);
+    }
+    50% {
+        transform: rotate(1.5deg);
+    }
+}
+
+.carrouselText {
+    animation: wiggle 4s ease-in-out infinite;
+}
+
+@keyframes coffe {
+    0%,
+    100% {
+        transform: translateY(20px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.coffe {
+    animation: coffe 4s ease-in-out infinite;
+}
+
+.custom-checkbox {
+    appearance: none;
+    -moz-appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-checkbox:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+    position: relative;
+}
+
+.custom-checkbox:checked::after {
+    content: "✔";
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+footer li.openFooter ul {
+    display: flex;
+    flex-direction: column;
+}
+
+footer li.openFooter button img {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+footer li button img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.teste {
+    display: block;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+    margin: 20px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #efeded;
+    margin-top: 20px;
+    margin-bottom: 13px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #cecece;
+    border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #c8c6c6;
+}
